@@ -10,8 +10,7 @@ process getSeq {
   script:
     """
       #!/usr/bin/env python3
-      from Bio import SeqIO
-      from io import StringIO
+      from Bio import SeqIO      
       
       with open('output.txt', 'a') as writer:
           with open("$fasta_file") as fasta_io:
